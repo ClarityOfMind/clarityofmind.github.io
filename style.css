@@ -2,11 +2,22 @@ body {
 	background-color: #f6f6f6; 
 }
 
-.wrapper {
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
 	width: 940px;
 	margin: 0 auto;
-    padding-top: 19%;
-}
+ }
+
+ .contanier--position {
+ 	height: 100vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+ }
 
 .user-profile {
 	width: 300px;
@@ -57,10 +68,13 @@ body {
     background-color: #33c1e3;
     border: 2px solid #fff;
     border-radius: 20px;
+    outline: none;
 }
 
-.button--hovered:hover {
+.button--white:hover {
     background-color: #fff;
     color: #33c1e3;
     cursor: pointer;
 }
+
+
