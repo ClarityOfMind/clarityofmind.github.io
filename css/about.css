@@ -26,32 +26,35 @@
 }
 
  .header__pic {
- 	width: 62px;
-	height: 62px;
+ 	width: 58px;
+	height: 58px;
 	border-radius: 50%;
 	border: 2px solid #bdbdbd;
  }
 
 .header__name {
 	font-size: 18px;
- 	font-family: 'Open Sans', sans-serif;
- 	font-weight: 700;
+ 	font-weight: 400;
     color: rgb(65, 65, 65);
     line-height: 1.556;
     flex-grow: 1;
 	margin-left: 18px;
+    margin-top: 4px;
 }
 
 .list {
 	position: relative;
+     margin-top: 4px;
 }
 
 .list__link {
+    font-size: 18px;
 	font-weight: 700;
     line-height: 1.556;
     color: rgb(50, 195, 229);
     text-decoration: none;
     border-bottom: 2px dotted rgb(90, 199, 229);
+    
 }
 
 .list__link:hover{
@@ -104,13 +107,24 @@
     content: '';
 }
 
+.list__item {
+	text-decoration: none;
+	font-size: 18px;
+  	color: rgb(65, 65, 65);
+  	line-height: 1.556;
+}
+
+.fa--blue {
+	color: rgb(51, 193, 227);
+}
+
 .profile {
-	height: calc(100vh - 50px);
+	min-height: calc(100vh - 50px);
 	background: rgb(246, 246,246);
 }
 
 .profile__container {
-	padding-top: 104px;
+	padding-top: 106px;
     display: flex;
     justify-content: space-between;
 }
@@ -133,7 +147,7 @@
     text-decoration: none;
     border-right: 6px solid transparent;
     height: 44px;
-    padding-right: 18px;
+    padding-right: 24px;
 }
 
 .navigation__item:hover {
@@ -170,12 +184,14 @@
 	font-weight: 500;
 	color: rgb(65, 65, 65);
 	line-height: 1.286;
-	margin-bottom: 20px;
+	margin-bottom: 11px;
 }
 
 .description__text{
-	height: 275px;
-	overflow-y: scroll;
+	position: relative;
+	width: 371px;
+    height: 278px;
+	overflow: hidden;
 	font-weight: 300;
 	font-size: 18px;
 	color: rgb(100, 100, 100);
@@ -190,6 +206,7 @@
     font-size: 14px;
     height: 40px;
     width: 173px;
+    outline: none;
 }
 
 .dwn-button--red {
@@ -198,6 +215,7 @@
     border: 2px solid rgb(232, 95, 97);
     border-radius: 20px;
     margin-left: 207px;
+    margin-bottom: 50px;
 }
 
 .dwn-button:hover {
@@ -255,4 +273,31 @@
 .footer__link--twitter:hover {
 	background-color: rgb(106,196,217);
 }
+
+
+
+.anatoly_mail_ru {
+  font-size: 18px;
+  color: rgb(65, 65, 65);
+  line-height: 1.556;
+  text-align: left;
+  position: absolute;
+  left: 125.844px;
+  top: 369.886px;
+  z-index: 94;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

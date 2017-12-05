@@ -3,10 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<title>about</title>
-	<link rel="stylesheet" href="about.css">
-	<link rel="stylesheet" href="css/normalize.css-master/normalize.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="libraries/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.concat.min.js"></script>
+	<link rel="stylesheet" href="css/about.css">
+	<link rel="stylesheet" href="libraries/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.css" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Fira+Sans:300,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Fira+Sans:300,400,500,700" subset=cyrillic,cyrillic-ext rel="stylesheet">
 	<link rel="shortcut icon" type="image/png" href="img/002-code.png"/>
 </head>
 <body>
@@ -17,9 +19,9 @@
 			<div class="list">
 				<a class="list__link" href="#">Мои контакты</a>
 				<ul class="list__block">
-					<li class="list__item"><i class="fa fa-envelope-o" aria-hidden="true"></i> &nbsp anatoly@mail.ru</li>
-					<li class="list__item"><i class="fa fa-phone" aria-hidden="true"></i> &nbsp +7 987 345 62 12</li>
-					<li class="list__item"><i class="fa fa-skype" aria-hidden="true"></i> &nbsp anatoly_</li>
+					<a  class="list__item" href="antoly@mail.ru"><li><i class="fa fa-envelope-o fa--blue" aria-hidden="true"></i> &nbsp anatoly@mail.ru</li></a>
+					<a class="list__item" href="#"><li ><i class="fa fa-phone fa--blue" aria-hidden="true"></i> &nbsp +7 987 345 62 12</li></a>
+					<a class="list__item" href="#"><li><i class="fa fa-skype fa--blue" aria-hidden="true"></i> &nbsp anatoly_</li></a>
 				</ul>
 			</div>
 		</div>
@@ -36,7 +38,7 @@
 				<div class="description">
 					<h1 class="description__header">Обо мне</h1>
 					<p class="description__text">Меня зовут Анатолий. Проживаю в городе Тольятти. В последнее время открыл для себя много интересного в JavaScript и всех сопутствующих тенденциях от Microsoft:ASP.NET 4, Knockout, SignalR, Upshot. Учусь писать тестируемый код на net. Делю логику на классы(стараюсь не забывать SOLID принципы) и тестировать юнит тестами. Хорошо пишу процедуры для MySQL. Чувствую в себе слабое владение client side и поэтому стараюсь восполнить данную нишу по мере возможностей. Из последних книг которые прочитал могу выделить: Professional ASP.NET MVC 3, JavaScript: The Good Parts, прочел много статей и туториалов. Знаком с “бандой четырех” и стараюсь использовать паттерны и практики где это необходимо и оправданно. Прочитал паттерны несколько раз но все равно есть непонимание некоторых моментов. Макконела также не обошел стороной. Иногда Читаю Фаулера выборочно: рефакторинг, PoEAA. Проблем с 5+ лет в IT было решено много разных.</p>
-				<button class="dwn-button dwn-button--red"><i class="fa fa-download" aria-hidden="true"></i> Скачать резюме</button>	
+				<button class="dwn-button dwn-button--red"><i class="fa fa-download" aria-hidden="true"></i> &nbsp Скачать резюме</button>	
 				</div>
 			</div>
 		</div>    
@@ -50,6 +52,16 @@
 				<a href="#" class="footer__link footer__link--twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 			</div>
 		</div>
-	</footer>	
+	</footer>
+	<script>
+    (function($){
+        $(window).on("load",function(){
+            $(".description__text").mCustomScrollbar({
+            	scrollbarPosition: "outside"
+            	
+            });
+        });
+    })(jQuery);
+	</script>	
 </body>
 </html>
