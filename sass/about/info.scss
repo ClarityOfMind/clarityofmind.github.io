@@ -1,0 +1,12 @@
+.info {
+	@include flexbox (space-between, none);
+    width: 665px;
+
+    &__img {
+		width: 220px;
+		height: 220px;
+		border: 5px solid $color6;	
+		border-radius: 50%;
+		margin-bottom: 15px;
+	}	
+}

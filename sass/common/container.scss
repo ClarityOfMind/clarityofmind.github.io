@@ -1,0 +1,9 @@
+.container {
+	width: 940px;
+	margin: 0 auto;
+
+	&--position {
+		@include flexbox (space-around, center);
+		height: 100vh;
+	}
+ }

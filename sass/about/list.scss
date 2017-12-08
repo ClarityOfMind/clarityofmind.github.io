@@ -1,0 +1,74 @@
+.list {
+	position: relative;
+    margin-top: 4px;
+
+    &__link {
+    	@include text (inherit, 700, 18px, 1.556)
+    	color: $color8;
+    	text-decoration: none;
+    	border-bottom: 2px dotted $color8;
+    	&:hover{
+			color: $color5;
+			border-color: $color5;
+    	}
+    }
+
+    &:hover &__block {
+		left: -55px; 
+    	opacity: 1;
+    }	
+     	
+    &__block {
+    	@include flexbox (space-around, left);
+    	@include text (inherit, 300, 18px, 1.556);
+    	flex-direction: column;
+		color: $color2;
+ 		width: 191px;
+		height: 132px;
+		border: 1px solid $color9;
+		border-radius: 9px;
+		background-color: $color6;
+		list-style: none;
+    	position: absolute;
+    	top: 37px;
+    	left: -9999px; 
+    	opacity:0;
+    	-webkit-transition: 0.25s linear opacity;
+    	padding-left: 20px;
+    	&:before, &:after {
+    		position: absolute;
+    		content: '';
+    		bottom: 100%;
+    		right: 90px;
+    		border: 10px solid transparent;
+    		border-bottom-color: $color9;
+    	}
+
+    	&:after {
+    		border: 9px solid transparent;
+    		border-bottom-color: $color6;
+    		right: 91px;
+    	}
+	}
+
+	&__item {
+		@include text (inherit, 400, 18px, 1.556)
+		text-decoration: none;
+		color: $color2;
+	}	
+  		
+}
+
+.fa--blue {
+	color: rgb(51, 193, 227);
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,9 @@
+.profile {
+	min-height: calc(100vh - 50px);
+	background: $color3;
+
+	&__container {
+		@include flexbox (space-between, none)
+		padding-top: 106px;
+	}
+}

@@ -1,0 +1,23 @@
+.navigation {
+	@include flexbox (none, none);
+    flex-direction: column;
+    width: 221px;
+    text-align: right;
+
+    &__item {
+    	@include flexbox (flex-end, center);
+    	@include text(inherit, 400, 18px, 1.333);
+    	color: $color2;
+    	text-decoration: none;
+    	border-right: 6px solid transparent;
+    	height: 44px;
+    	padding-right: 24px;
+    	&:hover {color: $color4;}
+    }	
+
+	&__item--active {
+		color: $color4;
+		border-right: 6px solid $color4;
+		font-weight: 700;
+	}
+}

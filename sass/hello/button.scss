@@ -1,0 +1,24 @@
+.button {
+	@include text ($firaSans, 700, 14px, 2)
+    height: 40px;
+    width: 138px;
+    outline: none;
+
+	&--white {
+		color: $color6;
+    	background-color: $color4;
+    	border: 2px solid $color6;
+    	border-radius: 20px;
+    	outline: none;
+        &:hover {
+            background-color: $color6;
+            color: $color4;
+            cursor: pointer;
+        }
+	} 
+}
+
+
+
+
+

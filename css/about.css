@@ -8,7 +8,7 @@
 	margin: 0 auto;
  }
 
- .header {
+.header {
  	height: 78px;
  	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
  	position: fixed;
@@ -25,7 +25,7 @@
 	align-items: center;
 }
 
- .header__pic {
+.header__pic {
  	width: 58px;
 	height: 58px;
 	border-radius: 50%;
@@ -44,7 +44,7 @@
 
 .list {
 	position: relative;
-     margin-top: 4px;
+    margin-top: 4px;
 }
 
 .list__link {
@@ -187,7 +187,7 @@
 	margin-bottom: 11px;
 }
 
-.description__text{
+.description__text {	
 	position: relative;
 	width: 371px;
     height: 278px;
@@ -276,16 +276,6 @@
 
 
 
-.anatoly_mail_ru {
-  font-size: 18px;
-  color: rgb(65, 65, 65);
-  line-height: 1.556;
-  text-align: left;
-  position: absolute;
-  left: 125.844px;
-  top: 369.886px;
-  z-index: 94;
-}
 
 
 

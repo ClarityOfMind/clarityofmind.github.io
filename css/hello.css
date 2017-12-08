@@ -10,14 +10,14 @@ body {
 .container {
 	width: 940px;
 	margin: 0 auto;
- }
+}
 
  .contanier--position {
  	height: 100vh;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
- }
+}
 
 .user-profile {
 	width: 300px;

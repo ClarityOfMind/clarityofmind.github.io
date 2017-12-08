@@ -1,0 +1,16 @@
+/* --------- Flex continer basic properties -----------*/
+
+@mixin flexbox ($jc, $ai) {
+	display: flex;
+	justify-content: $jc;
+	align-items: $ai;
+}
+
+/*------------------ Text properties ------------------*/
+
+@mixin text ($font-family, $font-weight, $font-size, $line-height) {
+	font-family: $font-family;
+	font-weight: $font-weight;
+	font-size: $font-size;
+	line-height: $line-height;
+}

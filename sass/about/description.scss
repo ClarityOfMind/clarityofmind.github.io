@@ -1,0 +1,21 @@
+.description {
+	@include flexbox (none, none)
+	flex-direction: column;
+	width: 380px;
+
+	&__header {
+		@include text (inherit, 500, 35px, 1.286);
+		color: $color2;
+		margin-bottom: 11px;
+	}
+
+	&__text {
+		@include text (inherit, 300, 18px, 1.444);
+		position: relative;
+		width: 371px;
+    	height: 278px;
+		overflow: hidden;
+		color: rgb(100, 100, 100);
+		margin-bottom: 65px;
+	}
+}

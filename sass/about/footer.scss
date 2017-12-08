@@ -1,0 +1,34 @@
+.footer {
+	height: 50px;
+	background-color: $color2;
+
+	&__container {
+		@include flexbox (none, center);
+		height: 100%;
+	}
+
+	&__copyright {
+		@include text (inherit, 300, 14px, 2.857);
+		flex-grow: 1;
+		color: $color10;
+  	}
+
+  	&__social {
+  		@include flexbox (space-between, center);
+		height: 100%;
+		width: 107px;
+	}
+
+	&__link {
+		@include flexbox (space-around, center);
+		width: 30px;
+		height: 30px;
+		color:  $color2;
+		background-color: $color10;
+		border-radius: 50%;
+		text-decoration: none;
+		&--fb:hover {background-color: rgb(68,99,166)};
+		&--vk:hover {background-color: rgb(93,153,195)};
+		&--twitter:hover {background-color: rgb(106,196,217)};
+	}
+}

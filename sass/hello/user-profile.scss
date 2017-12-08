@@ -1,0 +1,35 @@
+.user-profile {
+	width: 300px;
+	height: 228px;
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,.3);
+	text-align: center;
+	border-radius: 10px;
+	background-color: $color6;
+
+	&--position {
+		margin: auto;
+	}
+
+		&__photo {
+			width: 140px;
+			height: 140px;
+			border-radius: 50%;
+			border: 2px solid #bdbdbd;
+			margin-top: -25%;
+			margin-bottom: 7px;
+		}
+
+		&__info {
+			@include text ($openSans, 600, 21px, 1.333);
+			color: $color2;
+    		margin-bottom: 16px;
+		}
+
+		&__footer {
+			@include flexbox (center, center);
+			height: 78px;
+			background-color: $color4;
+			border-radius: 0 0 10px 10px
+		}
+}
+

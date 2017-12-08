@@ -1,0 +1,16 @@
+.c-block {
+	@include flexbox (space-between, none);
+	height: 518px;
+	
+	&__img {
+		width: 220px;
+		height: 220px;
+		border-radius: 9px;
+	}
+
+	&__tablet {
+
+	}
+}
+
+
