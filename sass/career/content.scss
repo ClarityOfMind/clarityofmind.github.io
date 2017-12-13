@@ -6,11 +6,9 @@
 	&__header {
 		@include text (inherit, 500, 35px, 1.286);
 		color: $color2;
+		margin-bottom: 20px;
 	}
 
-	&__c-block {
-
-	}
 }
 
 

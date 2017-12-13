@@ -19,3 +19,26 @@
 		margin-bottom: 65px;
 	}
 }
+
+@media screen and (max-width: 520px) {
+	.description {
+		@include flexbox (flex-start, center);
+		flex-direction: column;
+		width: auto;
+	}
+
+	.description__header {
+		margin-bottom: 20px;
+	}
+
+	.description__text {
+		width: auto;
+		height: auto;
+		overflow: auto;
+		margin-bottom: 40px;
+	}
+}
+
+
+
+

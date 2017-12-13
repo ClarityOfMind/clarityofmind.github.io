@@ -6,13 +6,15 @@
 
     &__item {
     	@include flexbox (flex-end, center);
-    	@include text(inherit, 400, 18px, 1.333);
+    	@include text (inherit, 400, 18px, 1.333);
     	color: $color2;
     	text-decoration: none;
     	border-right: 6px solid transparent;
     	height: 44px;
     	padding-right: 24px;
     	&:hover {color: $color4;}
+
+        .fa {margin-right: 9px}
     }	
 
 	&__item--active {
@@ -21,3 +23,34 @@
 		font-weight: 700;
 	}
 }
+
+@media screen and (max-width: 520px) {
+    .navigation {
+        @include flexbox (space-between, none);
+        flex-direction: row;
+        width: auto;
+        text-align: left;
+        margin-bottom: 23px;
+    }
+
+    .navigation__item {
+        @include flexbox (flex-start, none);
+        @include text (inherit, 400, 14px,  1.714);
+        border: none;
+        margin-right: 20px;
+        padding: 0;
+        height: auto;
+    }
+
+    .navigation__item--active {
+        color: $color4;
+        font-weight: 700;
+    }
+
+    .navigation a i {
+        display: none;
+    } 
+}
+
+
+

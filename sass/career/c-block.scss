@@ -1,16 +1,17 @@
 .c-block {
-	@include flexbox (space-between, none);
-	height: 518px;
+	@include flexbox (space-between, none); 
 	
-	&__img {
+	&__img-wrap{
 		width: 220px;
 		height: 220px;
 		border-radius: 9px;
+		overflow: hidden;
 	}
 
-	&__tablet {
-
+	&__img {
+   		margin: -5px 0 0 -92px;
 	}
 }
+	
 
 

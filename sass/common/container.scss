@@ -6,4 +6,12 @@
 		@include flexbox (space-around, center);
 		height: 100vh;
 	}
+
  }
+
+@media screen and (max-width: 520px) {
+    	 .container {
+    	 	width: calc(100% - 19px);
+    	 	margin: 0 10px 0 9px;
+    	 }
+}    	 

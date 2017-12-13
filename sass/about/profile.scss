@@ -3,7 +3,17 @@
 	background: $color3;
 
 	&__container {
-		@include flexbox (space-between, none)
+		@include flexbox (space-between, none);
 		padding-top: 106px;
+		}
+ 	}
+
+@media screen and (max-width: 520px) {
+	.profile {
+		min-height: calc(100vh - 114px);
 	}
-}
+	.profile__container {
+		flex-direction: column;
+		padding-top: 99px;
+	}
+}	

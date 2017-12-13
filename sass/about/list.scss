@@ -2,7 +2,7 @@
 	position: relative;
     margin-top: 4px;
 
-    &__link {
+    &__link, {
     	@include text (inherit, 700, 18px, 1.556)
     	color: $color8;
     	text-decoration: none;
@@ -11,6 +11,16 @@
 			color: $color5;
 			border-color: $color5;
     	}
+    }
+
+    &__link--mobile {
+        display: none;
+        color: $color8;
+        text-decoration: none;
+        &:hover{
+            color: $color5;
+            border-color: $color5;
+        }    
     }
 
     &:hover &__block {
@@ -60,8 +70,54 @@
 }
 
 .fa--blue {
-	color: rgb(51, 193, 227);
+	color: $color4;
 }
+
+
+
+@media screen and (max-width: 520px) {
+    .list {
+        a .fa {
+        font-size: 40px;
+        }
+    }
+
+    .list__link {
+        display: none;
+    }
+
+    .list__link--mobile {
+        display: block;
+        border: none;
+    }
+
+    .list:hover .list__block {
+        top: 60px;
+        left: -180px; 
+        opacity: 1;
+    }
+
+    .list__block {
+        height: 90px;
+        &:before, &:after {
+            right: 10px;
+        }
+
+        &:after {
+            right: 11px;
+        }
+
+        a li .fa {
+            font-size: 14px;
+        }
+    }
+
+    .list__item {
+        @include text (inherit, 300, 14px, 1.556);
+    }   
+        
+}
+
 
 
 
