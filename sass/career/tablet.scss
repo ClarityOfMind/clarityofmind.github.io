@@ -4,7 +4,7 @@
 	&:hover {
 		cursor: pointer;
 		.tablet__date {
-			@include text (inherit, 700, 18px, 1.444);
+			@include text (inherit, 700, 18px, 26px);
 			color: $color4;
 		}
 
@@ -19,7 +19,7 @@
 	}
 		
 	&__date {
-		@include text (inherit, 300, 14px, 1.857);
+		@include text (inherit, 300, 14px, 26px);
 		color: $color1;
 	}
 		
@@ -43,7 +43,7 @@
 		line-height: 1.238;
 
 		.tablet__text {
-			@include text (inherit, 300, 21px, 1.238);
+			@include text (inherit, 300, 21px, 26px);
 			color: rgb(90, 90, 90);
 		}
 
@@ -53,5 +53,18 @@
 	}
 }
 	
+@media screen and (max-width: 520px) {
+    .tablet__date,.tablet__dot {
+    	display: none;
+    }
 
+    .tablet__item,.tablet {
+    	width: 100%;
+    	margin-left: 0;
+    }
+
+    .tablet__text {
+    	@include text (inherit, 300, 18px, 26px);
+    }
+}	
 

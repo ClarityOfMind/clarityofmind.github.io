@@ -4,13 +4,13 @@
 	width: 380px;
 
 	&__header {
-		@include text (inherit, 500, 35px, 1.286);
+		@include text (inherit, 500, 35px, 45px);
 		color: $color2;
-		margin-bottom: 11px;
+		margin-bottom: 16px;
 	}
 
 	&__text {
-		@include text (inherit, 300, 18px, 1.444);
+		@include text (inherit, 300, 18px, 26px);
 		position: relative;
 		width: 371px;
     	height: 278px;
@@ -38,7 +38,6 @@
 		margin-bottom: 40px;
 	}
 }
-
 
 
 

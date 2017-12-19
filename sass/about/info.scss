@@ -13,11 +13,8 @@
 
 @media screen and (max-width: 520px) {
     .info {
+        @include flexbox (space-between, center)
     	flex-direction: column;
     	width: auto;	
-    }
-
-    .info__img {
-    	
     }
 }

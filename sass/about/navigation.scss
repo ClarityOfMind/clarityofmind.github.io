@@ -6,7 +6,7 @@
 
     &__item {
     	@include flexbox (flex-end, center);
-    	@include text (inherit, 400, 18px, 1.333);
+    	@include text (inherit, 400, 18px, 24px);
     	color: $color2;
     	text-decoration: none;
     	border-right: 6px solid transparent;
@@ -21,6 +21,7 @@
 		color: $color4;
 		border-right: 6px solid $color4;
 		font-weight: 700;
+        animation: broken 10s linear infinite;
 	}
 }
 
@@ -35,7 +36,7 @@
 
     .navigation__item {
         @include flexbox (flex-start, none);
-        @include text (inherit, 400, 14px,  1.714);
+        @include text (inherit, 400, 14px,  24px);
         border: none;
         margin-right: 20px;
         padding: 0;
@@ -45,6 +46,7 @@
     .navigation__item--active {
         color: $color4;
         font-weight: 700;
+        animation: none;
     }
 
     .navigation a i {

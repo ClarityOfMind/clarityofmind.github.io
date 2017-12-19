@@ -21,7 +21,7 @@
  	}
 
  	&__name {
- 		@include text (inherit, 400, 18px, 1.556);
+ 		@include text (inherit, 400, 18px, 28px);
    		color: color2;
     	flex-grow: 1;
 		margin-left: 18px;
@@ -45,6 +45,7 @@
 	}    	 
 	
 	.header__name-mobile {
+		@include text (inherit, 400, 14px, 21px);
 		display: block;
 	}
 }    	 

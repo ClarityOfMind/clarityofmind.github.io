@@ -18,3 +18,12 @@
 		margin-bottom: 20px;
 	}
 }
+
+@media screen and (max-width: 520px) {
+	.timeline {
+		width: 100%;
+		&:before {
+			display: none;
+		}
+	}
+}

@@ -3,7 +3,7 @@
     margin-top: 4px;
 
     &__link, {
-    	@include text (inherit, 700, 18px, 1.556)
+    	@include text (inherit, 700, 18px, 28px)
     	color: $color8;
     	text-decoration: none;
     	border-bottom: 2px dotted $color8;
@@ -24,13 +24,14 @@
     }
 
     &:hover &__block {
-		left: -55px; 
+		visibility: visible;
     	opacity: 1;
+        -webkit-transition: opacity 0.25s, visibility 0.25s;
     }	
      	
     &__block {
     	@include flexbox (space-around, left);
-    	@include text (inherit, 300, 18px, 1.556);
+    	@include text (inherit, 300, 18px, 28px);
     	flex-direction: column;
 		color: $color2;
  		width: 191px;
@@ -41,9 +42,10 @@
 		list-style: none;
     	position: absolute;
     	top: 37px;
-    	left: -9999px; 
+    	left: -55px; 
     	opacity:0;
-    	-webkit-transition: 0.25s linear opacity;
+        visibility: hidden;
+    	-webkit-transition: opacity 0.25s, visibility 0.25s;
     	padding-left: 20px;
     	&:before, &:after {
     		position: absolute;

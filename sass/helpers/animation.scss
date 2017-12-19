@@ -1,0 +1,9 @@
+@keyframes broken {
+	0%,12%,18.999%,23%,31.999%,37%,44.999%,46%,49.999%,51%,58.999%,61%,68.999%,71%,85.999%,96%,100% {
+    color: $color4; border-right: 6px solid $color4; font-weight: 700;
+  }
+  19%,22.99%,32%,36.999%,45%,45.999%,50%,50.99%,59%,60.999%,69%,70.999%,86%,95.999% { 
+    color: $color2; border-right: 6px solid transparent; @include text (inherit, 400, 18px, 24px); 
+  }
+}
+ 

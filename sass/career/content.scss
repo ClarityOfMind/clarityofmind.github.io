@@ -1,16 +1,25 @@
 .content {
 	@include flexbox (none, none);
 	flex-direction: column;
-	width: 699px;
+	width: 700px;
 
 	&__header {
-		@include text (inherit, 500, 35px, 1.286);
+		@include text (inherit, 500, 35px, 45px);
 		color: $color2;
 		margin-bottom: 20px;
 	}
-
 }
 
+@media screen and (max-width: 520px) {
+    .content {
+        @include flexbox (space-between, center)
+    	flex-direction: column;
+    	width: auto;
 
+    	&__header {
+    		margin-bottom: 13px;
+    	}	
+    }
+}
 
 

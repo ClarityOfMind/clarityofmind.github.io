@@ -13,5 +13,16 @@
 	}
 }
 	
+@media screen and (max-width: 520px) {
+    .c-block {
+        @include flexbox (space-between, center)
+    	flex-direction: column;
+    	width: auto;
 
+    	&__img-wrap {
+    		box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+    		margin-bottom: 20px;
+    	}	
+    }
+}	
 
