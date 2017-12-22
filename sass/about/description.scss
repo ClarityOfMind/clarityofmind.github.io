@@ -25,17 +25,17 @@
 		@include flexbox (flex-start, center);
 		flex-direction: column;
 		width: auto;
-	}
 
-	.description__header {
-		margin-bottom: 20px;
-	}
+		&__header {
+			margin-bottom: 20px;
+		}
 
-	.description__text {
-		width: auto;
-		height: auto;
-		overflow: auto;
-		margin-bottom: 40px;
+		&__text {
+			width: auto;
+			height: auto;
+			overflow: auto;
+			margin-bottom: 40px;
+		}
 	}
 }
 

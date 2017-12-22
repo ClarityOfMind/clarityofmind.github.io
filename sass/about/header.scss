@@ -26,28 +26,26 @@
     	flex-grow: 1;
 		margin-left: 18px;
     	margin-top: 4px;
-    }
-	
-	&__name-mobile {
-		display: none;
-		@include text (inherit, 400, 14px, 1.5);
-   		color: color2;
-    	flex-grow: 1;
-		margin-left: 18px;
-	} 
-}	
 
+    	&--mobile {
+			display: none;
+			@include text (inherit, 400, 14px, 1.5);
+   			color: color2;
+    		flex-grow: 1;
+			margin-left: 18px;
+		} 
+    }	
+}	
 
 @media screen and (max-width: 520px) {
 	.header__name {
 		display: none;
 
+		&--mobile {
+			@include text (inherit, 400, 14px, 21px);
+			display: block;
+		}
 	}    	 
-	
-	.header__name-mobile {
-		@include text (inherit, 400, 14px, 21px);
-		display: block;
-	}
 }    	 
 
 

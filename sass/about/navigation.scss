@@ -21,8 +21,14 @@
 		color: $color4;
 		border-right: 6px solid $color4;
 		font-weight: 700;
-        animation: broken 10s linear infinite;
+        /*animation: broken 10s linear infinite;*/
 	}
+    
+    &__item--anim1 {animation: bounceInDown 1s ease-in-out 0s forwards}
+
+    &__item--anim2 {animation: bounceInDown 1s ease-in-out .1s forwards}
+
+    &__item--anim3 {animation: bounceInDown 1s ease-in-out .2s forwards}
 }
 
 @media screen and (max-width: 520px) {
@@ -32,22 +38,23 @@
         width: auto;
         text-align: left;
         margin-bottom: 23px;
+
+         &__item {
+            @include flexbox (flex-start, none);
+            @include text (inherit, 400, 14px,  24px);
+            border: none;
+            margin-right: 20px;
+            padding: 0;
+            height: auto;
+
+            &--active {
+                color: $color4;
+                font-weight: 700;
+                animation: none;
+            }
+        }
     }
 
-    .navigation__item {
-        @include flexbox (flex-start, none);
-        @include text (inherit, 400, 14px,  24px);
-        border: none;
-        margin-right: 20px;
-        padding: 0;
-        height: auto;
-    }
-
-    .navigation__item--active {
-        color: $color4;
-        font-weight: 700;
-        animation: none;
-    }
 
     .navigation a i {
         display: none;

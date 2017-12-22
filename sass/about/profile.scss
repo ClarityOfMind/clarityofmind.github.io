@@ -11,9 +11,10 @@
 @media screen and (max-width: 520px) {
 	.profile {
 		min-height: calc(100vh - 114px);
-	}
-	.profile__container {
-		flex-direction: column;
-		padding-top: 99px;
-	}
+
+		&__container {
+			flex-direction: column;
+			padding-top: 99px;
+		}
+	}	
 }	
