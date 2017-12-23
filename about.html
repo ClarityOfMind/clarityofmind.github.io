@@ -1,50 +1,126 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+	<title>about</title>
+
+	<!-- *****************************  META  ***************************************** -->
+
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>about</title>
+	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+    <meta content="telephone=no" name="format-detection">
+
+	<!-- *****************************  CSS  ****************************************** -->
+
+	<link rel="stylesheet" href="src/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css"/>
+
+	<!-- *****************************  JS  ******************************************* -->
+
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="src/style.css">
-	<link rel="shortcut icon" type="image/png" href="img/002-code.png"/>
+	
+	<!-- *****************************  FAVICONS  ************************************* -->
+
+	<link rel="apple-touch-icon" sizes="180x180" href="img/ico/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/ico/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/ico/favicon-16x16.png">
+	<link rel="manifest" href="img/ico/manifest.json">
+	<link rel="mask-icon" href="img/ico/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="img/ico/favicon.ico">
+	<meta name="msapplication-config" content="img/ico/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- *****************************  @@@@@@@@  *****************************************
+
+										SHARING
+
+	**********************************  @@@@@@@@  ************************************* -->
+
+	<!-- ***************************  FACEBOOK  *************************************** -->
+
+	<meta property="og:title" content="hello" />
+	<meta property="og:description" content="Портфолио Анатолия анатольевича" />
+	<meta property="og:image" content="img/hello" />
+	<meta property="og:url" content="http://clarityofmind.github.io/hello.html/https://clarityofmind.github.io/hello.html" />
+	<meta property="og:site_name" content="Anatoly's portfolio" />
+
+	<!-- ***************************  VK  ********************************************* -->
+
+	<link rel="image_src" href="img/hello" />
+	<meta property="og:image" content="img/hello" />
+
+	<!-- ***************************  GOOGLE+  **************************************** -->
+
+	<meta itemprop="name" content="Anatoly's portfolio" />
+	<meta itemprop="description" content="Портфолио Анатолия анатольевича" />
+	<meta itemprop="image" content="img/hello" />
+
+	<!-- *****************************  ////  ***************************************** -->
+	
 </head>
 <body>
+
+	<!-- **********************************************************************************
+		//////////////////////////////  HEADER  ///////////////////////////////////////////
+
+	************************************************************************************-->	
 	<header class="header">
 		<div class="container header__container">
-			<img class="header__pic" src="img/photo.png" alt="user photo">
+			<a href="hello.html">
+				<img class="header__pic" src="img/photo.png" alt="user photo">
+			</a>
 			<p class="header__name">Анатолий Анатольев</p>
 			<p class="header__name--mobile">Анатолий<br />Анатольев</i></p>
 			<div class="list">
 				<a class="list__link" href="#">Мои контакты</a>
 				<a class="list__link--mobile" href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
 				<ul class="list__block">
-					<a  class="list__item" href="antoly@mail.ru"><li><i class="fa fa-envelope-o fa--blue" aria-hidden="true"></i> &nbsp anatoly@mail.ru</li></a>
-					<a class="list__item" href="#"><li ><i class="fa fa-phone fa--blue" aria-hidden="true"></i> &nbsp +7 987 345 62 12</li></a>
-					<a class="list__item" href="#"><li><i class="fa fa-skype fa--blue" aria-hidden="true"></i> &nbsp anatoly_</li></a>
+					<a  class="list__item" href="mailto:antoly@mail.ru"	><li><i class="fa fa-envelope-o fa--blue" aria-hidden="true"></i> &nbsp anatoly@mail.ru</li></a>
+					<a class="list__item" href="tel:+79873456212"><li ><i class="fa fa-phone fa--blue" aria-hidden="true"></i> &nbsp +7 987 345 62 12</li></a>
+					<a class="list__item" href="skype:anatoly_"><li><i class="fa fa-skype fa--blue" aria-hidden="true"></i> &nbsp anatoly_</li></a>
 				</ul>
 			</div>
 		</div>
-	</header>	
+	</header>
+
+	<!-- **********************************************************************************
+		//////////////////////////////  PROFILE  //////////////////////////////////////////
+
+	************************************************************************************-->		
 	<section class="profile">
 		<div class="container profile__container">
+
+		<!--*/*/*/*/*/*/*/ NAVIGATION BLOCK /*/*/*/*/*/*/*-->
+
 			<nav class="navigation">
 				 <a class="navigation__item navigation__item--active navigation__item--anim1" href="#"><i class="fa fa-user-secret" aria-hidden="true"></i>Обо мне</a>
 				 <a class="navigation__item navigation__item--anim2" href="career.html"><i class="fa fa-rocket" aria-hidden="true"></i>Карьерный путь</a>
 				 <a class="navigation__item navigation__item--anim3" href="portfolio.html"><i class="fa fa-briefcase" aria-hidden="true"></i>Портфолио</a>
 			</nav>
+			
+		<!--*/*/*/*/*/*/*/ INFO BLOCK /*/*/*/*/*/*/*/*/*/*-->
+
 			<div class="info">
 				<img src="img/ava.png" alt="user avatar" class="info__img">
 				<div class="description">
 					<h1 class="description__header">Обо мне</h1>
-					<p class="description__text">Меня зовут Анатолий. Проживаю в городе Тольятти. В последнее время открыл для себя много интересного в JavaScript и всех сопутствующих тенденциях от Microsoft:ASP.NET 4, Knockout, SignalR, Upshot. Учусь писать тестируемый код на net. Делю логику на классы(стараюсь не забывать SOLID принципы) и тестировать юнит тестами. Хорошо пишу процедуры для MySQL. Чувствую в себе слабое владение client side и поэтому стараюсь восполнить данную нишу по мере возможностей. Из последних книг которые прочитал могу выделить: Professional ASP.NET MVC 3, JavaScript: The Good Parts, прочел много статей и туториалов. Знаком с “бандой четырех” и стараюсь использовать паттерны и практики где это необходимо и оправданно. Прочитал паттерны несколько раз но все равно есть непонимание некоторых моментов. Макконела также не обошел стороной. Иногда Читаю Фаулера выборочно: рефакторинг, PoEAA. Проблем с 5+ лет в IT было решено много разных.</p>
+					<p class="description__text">Меня зовут Анатолий. Проживаю в городе Тольятти. В последнее время открыл для себя много интересного в JavaScript и всех сопутствующих тенденциях от Microsoft:ASP.NET 4, Knockout, SignalR, Upshot. Учусь писать тестируемый код на net. Делю логику на классы(стараюсь не забывать SOLID принципы) и тестировать юнит тестами. Хорошо пишу процедуры для MySQL. Чувствую в себе слабое владение client side и поэтому стараюсь восполнить данную нишу по мере возможностей. Из последних книг которые прочитал могу выделить: Professional ASP.NET MVC 3, JavaScript: The Good Parts, прочел много статей и туториалов. Знаком с “бандой четырех” и стараюсь использовать паттерны и практики где это необходимо и оправданно. Прочитал паттерны несколько раз но все равно есть непонимание некоторых моментов. Макконела также не обошел стороной. Иногда Читаю Фаулера выборочно: рефакторинг, PoEAA. Проблем с 5+ лет в IT было решено много разных.</p>	
 				<button class="dwn-button dwn-button--red"><i class="fa fa-download" aria-hidden="true"></i> &nbsp Скачать резюме</button>	
 				</div>
 			</div>
+		
+		<!--*/*/*/*/*/*/*/ ################ /*/*/*/*/*/*/*-->	
+
 		</div>    
 	</section>
+
+	<!-- **********************************************************************************
+		//////////////////////////////  FOOTER  ///////////////////////////////////////////
+
+	************************************************************************************-->	
+
 	<footer class="footer">
 		<div class="container footer__container">
 			<p class="footer__copyright">© Конфиденциальность сайта</p>
@@ -55,6 +131,11 @@
 			</div>
 		</div>
 	</footer>
+
+	<!-- **********************************************************************************
+		//////////////////////////////  SCRIPTS  //////////////////////////////////////////
+
+	************************************************************************************-->	
 	<script>
 		if ($( document ).width() > 520) {
     		(function($){

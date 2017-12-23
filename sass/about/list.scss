@@ -68,9 +68,12 @@
 	}
 
 	&__item {
-		@include text (inherit, 400, 18px, 1.556)
+		@include text (inherit, 400, 18px, 28px)
 		text-decoration: none;
 		color: $color2;
+        &:hover {
+            color: $color4;
+        }
 	}	
   		
 }
@@ -117,9 +120,6 @@
             }
         }
 
-        &__item {
-            @include text (inherit, 300, 14px, 1.556);
-        }  
     }    
 }
 

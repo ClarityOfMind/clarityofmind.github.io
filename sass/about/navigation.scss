@@ -21,14 +21,7 @@
 		color: $color4;
 		border-right: 6px solid $color4;
 		font-weight: 700;
-        /*animation: broken 10s linear infinite;*/
 	}
-    
-    &__item--anim1 {animation: bounceInDown 1s ease-in-out 0s forwards}
-
-    &__item--anim2 {animation: bounceInDown 1s ease-in-out .1s forwards}
-
-    &__item--anim3 {animation: bounceInDown 1s ease-in-out .2s forwards}
 }
 
 @media screen and (max-width: 520px) {
@@ -46,11 +39,11 @@
             margin-right: 20px;
             padding: 0;
             height: auto;
+            animation: none;
 
             &--active {
                 color: $color4;
                 font-weight: 700;
-                animation: none;
             }
         }
     }
