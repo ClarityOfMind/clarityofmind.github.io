@@ -3,6 +3,7 @@
     flex-direction: column;
     width: 221px;
     text-align: right;
+    margin-top: 4px;
 
     &__item {
     	@include flexbox (flex-end, center);
@@ -11,7 +12,7 @@
     	text-decoration: none;
     	border-right: 6px solid transparent;
     	height: 44px;
-    	padding-right: 24px;
+    	padding-right: 25px;
     	&:hover {color: $color4;}
 
         .fa {margin-right: 9px}

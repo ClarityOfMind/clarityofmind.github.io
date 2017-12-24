@@ -1,7 +1,6 @@
 .list {
 	position: relative;
-    margin-top: 4px;
-    margin-top: 30px;
+    margin-top: 24px;
     padding-bottom: 20px;
 
     &__link, {
@@ -82,7 +81,9 @@
 	color: $color4;
 }
 
-
+.fa-envelope-o {margin-right: 9px;}
+.fa-phone {margin-right: 14px}
+.fa-skype {margin-right: 12px;}
 
 @media screen and (max-width: 520px) {
     .list {
@@ -106,9 +107,8 @@
         }
 
         &__block {
-            height: 90px;
             &:before, &:after {
-                right: 10px;
+            right: 10px;
             }
 
             &:after {
@@ -116,10 +116,9 @@
             }
 
             a li .fa {
-                font-size: 14px;
+                font-size: 18px;
             }
         }
-
     }    
 }
 
